@@ -23,5 +23,45 @@
     "id": 5,
     "image": "images/UBBetriebswirtschaftslehre.jpg",
     "answer": "UB Betriebswirtschaftslehre"
+  },
+  {
+    "id": 6,
+    "image": "images/Forum (2031).jpg",
+    "answer": "Forum (2031)"
+  },
+  {
+    "id": 7,
+    "image": "images/Irchelpark.jpg",
+    "answer": "Irchelpark"
+  },
+  {
+    "id": 8,
+    "image": "images/Asien-Orient Institut.jpg",
+    "answer": "Asien-Orient Institut"
+  },
+  {
+    "id": 9,
+    "image": "images/Rechtswissenschaftliche Bibliothek.jpg",
+    "answer": "Rechtswissenschaftliche Bibliothek"
+  },
+  {
+    "id": 10,
+    "image": "images/Zentrum für Zahnmedizin.jpg",
+    "answer": "Zentrum für Zahnmedizin"
+  },
+  {
+    "id": 11,
+    "image": "images/Alter Botanischer Garten.jpg",
+    "answer": "Alter Botanischer Garten"
+  },
+  {
+    "id": 12,
+    "image": "images/Theologisches Seminar Kirchgasse.jpg",
+    "answer": "Theologisches Seminar Kirchgasse"
+  },
+  {
+    "id": 13,
+    "image": "images/Universitätsspital.jpg",
+    "answer": "Universitätsspital"
   }
 ]
