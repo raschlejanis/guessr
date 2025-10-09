@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "image": "images/BotanischerGarten.jpg",
+    "answer": "Botanischer Garten"
+  },
+  {
+    "id": 2,
+    "image": "images/Hauptgebäude.jpg",
+    "answer": "UZH Hauptgebäude"
+  },
+  {
+    "id": 3,
+    "image": "images/UBErziehungswissenschaften.jpg",
+    "answer": "UB Erziehungswissenschaften"
+  },
+  {
+    "id": 4,
+    "image": "images/Careum.jpg",
+    "answer": "Careum"
+  },
+  {
+    "id": 5,
+    "image": "images/UBBetriebswirtschaftslehre.jpg",
+    "answer": "UB Betriebswirtschaftslehre"
+  }
+]

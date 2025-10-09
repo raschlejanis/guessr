@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photo MCQ Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Photo Quiz</h1>
+    </header>
+
+    <section id="screen-start" class="screen active" aria-labelledby="start-title">
+      <h2 id="start-title">Ready to play?</h2>
+      <p>You'll see a photo and choose the correct answer out of five options. You get 5 rounds.</p>
+      <button id="btn-start" class="btn primary">Start Game</button>
+    </section>
+
+    <section id="screen-game" class="screen" aria-live="polite">
+      <div class="status">
+        <div id="round-indicator" aria-live="polite">Round 1/5</div>
+        <div id="score-indicator" aria-live="polite">Score: 0</div>
+      </div>
+
+      <figure class="photo-wrap">
+        <img id="question-image" alt="Question image" />
+        <figcaption id="image-caption" class="sr-only"></figcaption>
+      </figure>
+
+      <ul id="options" class="options" role="list"></ul>
+
+      <div class="controls">
+        <button id="btn-next" class="btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen" aria-labelledby="result-title">
+      <h2 id="result-title">Results</h2>
+      <p id="result-summary"></p>
+      <button id="btn-restart" class="btn primary">Play Again</button>
+    </section>
+  </main>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
