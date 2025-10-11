@@ -65,6 +65,23 @@ async function renderLeaderboard(gameMode = "classic") {
     list.innerHTML = "<li>Couldn’t load scores</li>";
   }
 }
+function finish() {
+  resultSummary.textContent = `You scored ${score} out of ${ROUNDS}.`;
+
+  (async () => {
+    let nickname = localStorage.getItem("nickname") || prompt("Nickname:", "Player");
+    if (nickname) {
+      nickname = nickname.trim().slice(0,24);
+      localStorage.setItem("nickname", nickname);
+      try { await submitScore(nickname, score, "classic"); } catch(e) { console.error(e); }
+    }
+    await renderLeaderboard("classic");
+    setScreen(screenResult);
+  })();
+}
+
+// On boot:
+renderLeaderboard("classic");
 
 
 
