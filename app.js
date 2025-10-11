@@ -194,10 +194,26 @@ function next(){
   }
 }
 
-function finish(){
+function finish() {
   resultSummary.textContent = `You scored ${score} out of ${ROUNDS}.`;
-  setScreen(screenResult);
+
+  (async () => {
+    let nickname = localStorage.getItem("nickname") || prompt("Enter a nickname (max 24 chars):", "Player");
+    if (nickname) {
+      nickname = nickname.trim().slice(0,24);
+      localStorage.setItem("nickname", nickname);
+      try {
+        await submitScore(nickname, score, "classic");
+      } catch (e) {
+        console.error("Score submit failed:", e);
+      }
+    }
+
+    await renderLeaderboard("classic");
+    setScreen(screenResult);
+  })();
 }
+
 renderLeaderboard("classic");
 
 
