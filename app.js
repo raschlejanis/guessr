@@ -198,6 +198,8 @@ function finish(){
   resultSummary.textContent = `You scored ${score} out of ${ROUNDS}.`;
   setScreen(screenResult);
 }
+renderLeaderboard("classic");
+
 
 btnStart.addEventListener('click', startGame);
 btnNext.addEventListener('click', next);
