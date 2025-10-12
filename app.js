@@ -13,58 +13,6 @@ const EMBEDDED_QUESTIONS = [
   { id: 5, image: "images/UBBetriebswirtschaftslehre.jpg", answer: "UB Betriebswirtschaftslehre" }
 ];
 
-// ---- Supabase config ----
-const SUPABASE_URL = "https://ncoxnrrxqxmyavxdgglm.supabase.co"; 
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5jb3hucnJ4cXhteWF2eGRnZ2xtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk5MDc5NzYsImV4cCI6MjA3NTQ4Mzk3Nn0.kwZoLSHSCX3L1ny_SJ4sf4Mm_su3WLBbva_Mfgc6QYg";        // <— replace
-
-async function sbFetch(path, options = {}) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
-    ...options,
-    headers: {
-      apikey: SUPABASE_ANON_KEY,
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
-      "Content-Type": "application/json",
-      Prefer: "return=representation",
-      ...(options.headers || {})
-    }
-  });
-  if (!res.ok) throw new Error(await res.text());
-  return res.json();
-}
-
-async function submitScore(nickname, score, gameMode) {
-  const body = JSON.stringify([{ nickname, score, game_mode: gameMode }]);
-  return sbFetch("scores", { method: "POST", body });
-}
-
-async function fetchLeaderboard(gameMode = "classic", limit = 10) {
-  const params = new URLSearchParams({
-    select: "*",
-    order: "score.desc,created_at.asc",
-    limit: String(limit),
-    game_mode: `eq.${gameMode}`
-  });
-  return sbFetch(`scores?${params.toString()}`, { method: "GET" });
-}
-
-async function renderLeaderboard(gameMode = "classic") {
-  const list = document.getElementById("lb-list");
-  if (!list) return;
-  list.innerHTML = "<li>Loading…</li>";
-  try {
-    const rows = await fetchLeaderboard(gameMode, 10);
-    list.innerHTML = "";
-    rows.forEach((r, i) => {
-      const li = document.createElement("li");
-      li.textContent = `${i + 1}. ${r.nickname} — ${r.score}`;
-      list.appendChild(li);
-    });
-  } catch (e) {
-    console.error(e);
-    list.innerHTML = "<li>Couldn’t load scores</li>";
-  }
-}
-
 // State
 let allQuestions = [];
 let gameQuestions = [];
