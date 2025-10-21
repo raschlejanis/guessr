@@ -63,5 +63,50 @@
     "id": 13,
     "image": "images/Universitätsspital.jpg",
     "answer": "Universitätsspital"
+  },
+  {
+    "id": 14,
+    "image": "images/ASVZ Fluntern.jpg",
+    "answer": "ASVZ Fluntern"
+  },
+  {
+    "id": 15,
+    "image": "images/Campus Irchel.jpg",
+    "answer": "Campus Irchel"
+  },
+  {
+    "id": 16,
+    "image": "images/Platte 14 Mensa.jpg",
+    "answer": "Platte 14 Mensa"
+  },
+  {
+    "id": 17,
+    "image": "images/Science Pavilion Irchel.jpg",
+    "answer": "Science Pavilion Irchel"
+  },
+  {
+    "id": 18,
+    "image": "images/Staatsarchiv d. Kantons.jpg",
+    "answer": "Staatsarchiv des Kantons"
+  },
+  {
+    "id": 19,
+    "image": "images/UB Anglizistik.jpg",
+    "answer": "UB Anglizistik"
+  },
+  {
+    "id": 20,
+    "image": "images/UB Germanistik & Skandinavistik.jpg",
+    "answer": "UB Germanistik & Skandinavistik"
+  },
+  {
+    "id": 21,
+    "image": "images/UB Pflanzenwissenschaften.jpg",
+    "answer": "UB Pflanzenwissenschaften"
+  },
+  {
+    "id": 22,
+    "image": "images/UB Psychologie.jpg",
+    "answer": "UB Psychologie"
   }
 ]
