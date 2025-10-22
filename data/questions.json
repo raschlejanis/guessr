@@ -108,5 +108,15 @@
     "id": 22,
     "image": "images/UB Psychologie.jpg",
     "answer": "UB Psychologie"
+  },
+  {
+    "id": 23,
+    "image": "images/Lichthof.jpg",
+    "answer": "Lichthof"
+  },
+  {
+    "id": 24,
+    "image": "images/Infopoint Hauptgebäude.jpg",
+    "answer": "Infopoint Hauptgebäude"
   }
 ]
