@@ -118,5 +118,60 @@
     "id": 24,
     "image": "images/Infopoint Hauptgebäude.jpg",
     "answer": "Infopoint Hauptgebäude"
-  }
+  },
+  {
+  "id": 25,
+  "image": "images/botanischer garten1.jpg",
+  "answer": "Botanischer Garten Teich"
+},
+{
+  "id": 26,
+  "image": "images/BWL1.jpg",
+  "answer": "BWL Bibliothek Lernraum"
+},
+{
+  "id": 27,
+  "image": "images/garten.jpg",
+  "answer": "Rechberggarten"
+},
+{
+  "id": 29,
+  "image": "images/Binzmühlestrasse.jpg",
+  "answer": "Psychologisches Institut Sozialpsychologie"
+},
+{
+  "id": 31,
+  "image": "images/guete eggä.jpg",
+  "answer": "Guetä Eggä"
+},
+{
+  "id": 32,
+  "image": "images/Irchel9.jpg",
+  "answer": "Irchel Innenhof"
+},
+{
+  "id": 33,
+  "image": "images/irchel10.jpg",
+  "answer": "Irchel Statue"
+},
+{
+  "id": 34,
+  "image": "images/Irchelsaal.jpg",
+  "answer": "Irchel Vorlesungssaal"
+},
+{
+  "id": 35,
+  "image": "images/Kuppel2.jpg",
+  "answer": "Kuppel Hauptgebäude"
+},
+{
+  "id": 36,
+  "image": "images/Life Science Campus Schlieren 2.jpg",
+  "answer": "Life Science Campus Schlieren"
+},
+{
+  "id": 37,
+  "image": "images/Naturhistorisches Museum.jpg",
+  "answer": "Naturhistorisches Museum"
+}
 ]
